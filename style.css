@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@700&family=Roboto+Mono&family=Silkscreen&display=swap');
+@media screen and (min-width: 769px) {
+  
+
+*{
+    box-sizing: border-box;
+  }
+body {
+    background-color: #568EA3;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+.mainheader {
+    display: flex;
+    width: 100%;
+    max-height:fit-content;
+    background-image: url(https://www.bates.edu/wordpress/files/2016/07/pattern1-900x281.jpg); 
+	background-size: cover; 
+	background-position: center; 
+    justify-content: space-around;
+    font-family: 'Edu QLD Beginner', cursive;
+}
+h2 {
+    padding-left: 2%;
+}
+
+.nav-bar{
+  padding-top:.5rem;  
+  font-family:Poppins;
+  color:#FFE5D9;
+  display:flex;
+  justify-content: space-between;
+  max-width: fit-content;
+}
+
+li, a {
+    display: inline;
+    width:100%;
+    font-size: 150%;
+    justify-content: space-around;
+    text-decoration: none;
+    color: white;
+    padding-right: 50px;
+}
+ul {
+    list-style: none;
+}
+
+a:hover {
+    color: #568EA3
+
+}
+
+.active-page {
+    color:#204958;
+}
+
+.both-column {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .top-column {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    z-index: 3;
+  }
+  
+  .column-left {
+    width: 70%;
+    height: 100vh;
+    border: #68C3D4 solid 2px;
+    padding: 10px;
+    overflow: auto;
+    font-family: 'Roboto Mono', monospace;
+  }
+  
+  .column-right {
+    width: 30%;
+    height: 100vh;
+    border: #68C3D4 solid 2px;
+    text-align: center;
+    color: black;
+    padding: 10px;
+    overflow: auto;
+    background-color: #ffe8d1;
+    font-family: 'Silkscreen', cursive;
+  }
+p.aboutme {
+    font-weight: 600;
+}
+
+.dogpic {
+    height: 250px;
+    width: 250px;
+    float: left;
+}
+.flexfoot {
+    display: flex;
+    align-items: left;
+    background-image: url(https://www.bates.edu/wordpress/files/2016/07/pattern1-900x281.jpg); 
+	max-height: fit-content;
+    width: 100%;
+    background-size: cover; 
+	background-position: center; 
+    color: white;
+    font-size: 2em;
+
+
+}
+.linkpic {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+div {
+    text-align: center;
+}
+.contact {
+    font-size: 3em;
+}
+}
+
+@media screen and (min-width:320px) and (max-width:768px) {
+    
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        background-color: #568EA3;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        height: 100%;
+        color: white;
+    }
+    .mainheader {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        background-image: url(https://www.bates.edu/wordpress/files/2016/07/pattern1-900x281.jpg); 
+        background-size: cover; 
+        background-position: center; 
+        justify-content: space-around;
+        font-family: 'Edu QLD Beginner', cursive;
+        align-items: center;
+    }
+    .nav-bar {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        background-color: #517c96;
+        margin: 0 auto 0 auto;
+        align-items: center;
+        text-align: center;
+    }
+    li, a {
+
+        padding-bottom: 10px;
+        text-decoration: none;
+        color: white;
+    }
+    ul.nav {
+        list-style: none;
+        padding: 0;
+
+    }
+    a:hover {
+        color: #63a6be;
+        
+    
+    }
+    .active-page {
+        color:#204958;
+    }
+    img {
+        width: 100px;
+        height: 100px;
+
+    }
+    .both-column {
+        display: flex;
+        flex-direction: column;
+        text-align:center;
+        flex-wrap: wrap;
+    }
+    .column-left {
+    background-color:#204958;
+    padding: 0 5% 0 5%;
+    }
+    .latin {
+        display: none;
+    }
+    .linkpic {
+        margin-top: 5%;
+    }
+    footer {
+        background-color:#143743;
+        text-align: center;
+        
+    }
+    h2 {
+        text-align: center;
+    }
+    div {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        display: block;
+    }
+
+
+    }
+  
+
+    /* modal css */
+
+/* The modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal content */
+  .modal-content {
+    background-color:#0f2931;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The close button */
+  .close {
+    color: rgb(0, 0, 0);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* CSS for the rock paper scissors game below */
+
+
+  .gamebackground {
+    background: #3f6f50;
+  }
+
+/* To center everything in game */
+.game{
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	width: 100vw;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Title of the game */
+.title{
+	position: absolute;
+	top: 0;
+	font-size: 4rem;
+	z-index: 2;
+}
+
+/* Score Board */
+.score{
+	display: flex;
+	width: 30vw;
+	justify-content: space-evenly;
+	position: absolute;
+	top: 70px;
+	z-index: 1;
+}
+
+/* Score */
+.p-count,.c-count{
+	text-align: center;
+	font-size: 1.5rem;
+	margin-top: 1rem;
+}
+
+/* displaying three buttons in one line */
+.options{
+	display: flex;
+	width: 50vw;
+	justify-content: space-evenly;
+	margin-top: 2rem;
+}
+
+/* Styling on all three buttons */
+.rock, .paper, .scissor{
+	padding: 0.8rem;
+	width: 100px;
+	border-radius: 10px;
+	background: rgb(143, 192, 92);
+	outline: none;
+	border-color: green;
+	border: none;
+	cursor: pointer;
+}
+
+.move{
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+/* Reload button style */
+.reload {
+	display: none;
+	margin-top: 2rem;
+	padding: 1rem;
+	background: green;
+	outline: none;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.result{
+	margin-top: 20px;
+	font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 612px)
+{
+	.title{
+		text-align: center;
+	}
+	.score{
+		position: absolute;
+		top: 200px;
+		width: 100vw;
+	}
+	.options{
+		width: 100vw;
+	}
+}
+
+.return {
+    position: relative;
+    bottom: 40px;
+    left: 45%;
+    padding: 0;
+    background-color: black;
+}
